@@ -8,99 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
+
+    <!-- Hero Section -->
     <section id="hero" class="jumbotron">
-        <div class="container">
+        <div class="container hero-content">
             <h1 class="hero-title">Hi, my name is <span class="text-color-main">Yasaswi IGS</span><br>Exploring roles in Data Engineering & Software Development.</h1>
-            <p class="hero-cta load-hidden"><a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a></p>
+            <p class="hero-cta"><a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a></p>
         </div>
     </section>
 
+    <!-- About Me Section -->
     <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
+        <div class="container about-container">
+            <div class="about-image">
                 <img src="Profile.jpg" alt="Profile Image" class="profile-img">
-                <p>Innovative Data Engineer with expertise in GCP, Python, and ETL pipeline development. Proven track record of optimizing data processes at Tenet Health and Lam Research, with strong skills in Big Query, Dataflow, and cloud-based data solutions. Combines technical proficiency with a data science background to deliver high-impact engineering solutions.</p>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="resume.pdf">View Resume</a>
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I’m Yasaswi IGS — a Data Engineer with expertise in GCP, Python, and ETL pipeline development. With a proven track record of optimizing data processes at Tenet Health and Lam Research, I bring strong skills in Big Query, Dataflow, and cloud-based solutions.</p>
+                <p>Skilled in Python, Java, .NET, and cloud platforms like AWS, I’m passionate about transforming complex data into actionable insights. Let’s connect and shape the future of data together!</p>
+                <a href="resume.pdf" target="_blank" class="cta-btn--resume">View Resume</a>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
             <h2>Professional Experience</h2>
             <div class="experience">
                 <h3>Data Engineer Intern, Tenet Health Corporation, Dallas, United States</h3>
                 <p>June 2024 – Present</p>
-                <p>During my tenure as a Data Engineer Intern at Tenet Health Corporation, I developed and optimized ETL pipelines using Google Cloud Platform (GCP) services, including Big Query, Dataflow, and Cloud Storage. I created a file ingestion framework in Python to facilitate seamless data integration from various sources into Big Query. I led the data migration process from T-SQL to Big Query, creating reporting tables for Power BI dashboards, leveraging Python-based scripts. Additionally, I supported the data science team by developing Python-based tools and infrastructure to ensure smooth integration with GCP analytics solutions.</p>
+                <p>Developed and optimized ETL pipelines using Google Cloud Platform (GCP), including Big Query, Dataflow, and Cloud Storage...</p>
             </div>
             <div class="experience">
                 <h3>Data Engineer, Lam Research, Bangalore, India</h3>
                 <p>Aug 2021 - Aug 2023</p>
-                <p>At Lam Research, I designed and maintained scalable data pipelines to process unstructured data for analytics and reporting, utilizing Python and SQL. I successfully migrated legacy data systems to cloud-based solutions using GCP services like Big Query and Dataflow, improving efficiency by 30%. I developed data ingestion frameworks that integrated diverse data sources into centralized data warehouses, enhancing data accessibility. My role also involved building automated data quality monitoring scripts to ensure reliable and consistent data pipelines. I implemented distributed data processing systems using Apache Hadoop and Spark, which improved processing speed and efficiency by 25%. Collaborating with cross-functional teams, I delivered optimized data solutions that reduced report generation time by 40%.</p>
+                <p>Designed scalable data pipelines to process unstructured data. Migrated legacy systems to GCP services, improving efficiency...</p>
             </div>
             <div class="experience">
                 <h3>Software Engineer Intern, Lam Research, Bangalore, India</h3>
                 <p>Jan 2021 - Jul 2021</p>
-                <p>As a Software Engineer Intern at Lam Research, I engineered a real-time data visualization platform to monitor system health and metrics, utilizing Python and Flask. I developed and optimized RESTful APIs for data integration and analytics, reducing backend latency by 20%. I designed scalable ETL workflows to handle data ingestion and transformation for operational reporting. Additionally, I built a dynamic dashboard using Angular and JavaScript to visualize key performance metrics of production systems.</p>
+                <p>Engineered a real-time data visualization platform using Python and Flask. Developed RESTful APIs for analytics...</p>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Academic Projects</h2>
             <div class="project">
                 <h3>NIKE Stock Price Prediction using LSTM, UT Dallas, Richardson, TX</h3>
                 <img src="Nike.jpg" alt="NIKE Stock Price Prediction" class="project-img">
-                <p>The NIKE Stock Price Prediction project involved implementing LSTM using PySpark and MapReduce to predict stock prices with 96% accuracy, and performing a comparative study with GBT regressor to highlight the model’s strengths and weaknesses.</p>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/YasaswiIGS/NIKE-Stock-Price-Prediction">Source Code</a>
+                <p>Implemented LSTM using PySpark to predict stock prices with 96% accuracy.</p>
             </div>
             <div class="project">
                 <h3>Argon DB Engine, UT Dallas, Richardson, TX</h3>
                 <img src="DbEngine.jpg" alt="Argon DB Engine" class="project-img">
-                <p>The Argon DB Engine project focused on implementing a database engine in Java using a file-per-table approach for efficient storage of table and index files at the OS level, managing DDL, DML, DQL, and SDL commands with an accuracy rate of 99%.</p>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/YasaswiIGS/Argon-DB-Engine">Source Code</a>
+                <p>Developed a database engine in Java for efficient table storage, achieving 99% accuracy in query execution.</p>
             </div>
         </div>
     </section>
 
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="publication">
-                <h3>Football Player Move Prediction, RIT, Bangalore, India</h3>
-                <p>Aug - Mar 2021</p>
-                <p>By integrating computer vision techniques (EDSR) and CNN Dense Net frameworks, this system predicts football players' movements using video data. Various deep learning frameworks, including ResNet152, DenseNet161, and ResNet162, were evaluated to identify the optimal predictive model architectures. <a href="http://index.php/jmmf/article/view/47995" target="_blank">Publication Link</a></p>
-            </div>
-            <div class="publication">
-                <h3>Hybrid Decision Support System to Enhance Crop Productivity</h3>
-                <p>Jan - May 2020</p>
-                <p>A hybrid decision support system was designed to forecast seasonal crop prices and yields by integrating hybrid ML algorithms (ARIMA, LSTM). The project also involved optimizing the hybrid algorithm by 20% and developing a web application to generate predictive crop forecasts with enhanced data representation through dynamic graphs. <a href="https://link.springer.com/chapter/10.1007" target="_blank">Publication Link</a></p>
-            </div>
-            <div class="publication">
-                <h3>Document Retrieval Through Cover Density Ranking</h3>
-                <p>Aug - Dec 2019</p>
-                <p>An enhanced information retrieval method called Cover Density Ranking (CDR) was developed to overcome the limitations of the Vector Space Model (VSM). The CDR method, implemented in Python, provided better computational power and accuracy, achieving an improvement of 85%. <a href="https://ieeexplore.ieee.org/document/9622541" target="_blank">Publication Link</a></p>
-            </div>
-        </div>
-    </section>
-
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Technical Skills</h2>
             <ul>
                 <li>Programming: Python, Java, JavaScript, C, C++, TypeScript</li>
-                <li>OS: Unix, Linux, Windows</li>
-                <li>Full-Stack Development: Angular, React, Node.js, Spring Boot, Bootstrap, Flask, HTML, CSS, Restful API</li>
-                <li>Frameworks/Libraries: Hadoop, Apache, Pyspark, Scrapy, Scikit Learn, PyTorch, Pandas, Numpy, Keras, Tensorflow</li>
-                <li>Database Management: MySQL, MongoDB, PostgressSQL, SQL, NoSQL</li>
-                <li>Additional Skills: Git, GCP, Jira, Microservices, Azure, Big Query, UNIX, Docker, Kubernetes, DevOps, AWS</li>
+                <li>Cloud Platforms: GCP, AWS, Azure</li>
+                <li>Database Management: MySQL, MongoDB, PostgreSQL</li>
+                <li>Big Data Tools: Hadoop, PySpark</li>
+                <li>DevOps: Docker, Kubernetes</li>
             </ul>
         </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
             <h2>Education</h2>
@@ -117,6 +102,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
@@ -125,6 +111,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <a href="#top" class="back-to-top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a>
@@ -137,6 +124,7 @@
         </div>
     </footer>
 
+    <!-- Include JavaScript -->
     <script src="index.js"></script>
 </body>
 </html>
