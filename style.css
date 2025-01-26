@@ -15,29 +15,31 @@ body {
 }
 
 /* Hero Section */
+/* Hero Section */
 #hero {
     background: #ffffff;
     color: #212529;
-    height: 100vh;
+    height: 100vh; /* Full screen height */
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align content to the left */
-    padding-left: 10%;
+    padding-left: 10%; /* Add spacing from the left edge */
     text-align: left;
 }
 
 .hero-content {
-    max-width: 50%;
+    max-width: 50%; /* Limit content width for better readability */
 }
 
 #hero h1 {
     font-size: 3.5rem;
     font-weight: bold;
     color: #212529;
+    line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 #hero h1 .text-color-main {
-    color: #20c997;
+    color: #20c997; /* Teal color for highlighted text */
 }
 
 #hero p {
@@ -55,6 +57,7 @@ body {
     border: 2px solid #20c997;
     border-radius: 8px;
     text-decoration: none;
+    background-color: transparent;
     transition: all 0.3s;
 }
 
@@ -62,6 +65,7 @@ body {
     background-color: #20c997;
     color: #ffffff;
 }
+
 
 /* About Me Section */
 .about-container {
