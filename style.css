@@ -280,44 +280,46 @@ body {
     }
 }
 
-/* Publications Section */
 #publications {
+    position: relative;
+    background: #20c997; /* Teal background */
+    color: white;
     padding: 60px 0;
-    background: #20c997; /* Teal background matching Certifications */
-    color: #ffffff;
+    text-align: center;
 }
 
-#publications h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-    color: #ffffff;
+#publications::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust the height of the diagonal */
+    background: #ffffff; /* Background color for the section below */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Diagonal shape */
+    z-index: 1;
 }
 
 .publication-list {
-    list-style-type: none;
-    padding: 0;
     margin: 0;
-    text-align: left;
+    padding: 0;
+    list-style: none;
 }
 
 .publication-list li {
+    margin: 20px 0;
     font-size: 1.2rem;
-    line-height: 2;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
 }
 
-.publication-list li a {
+.publication-list a {
     color: #ffffff;
     font-weight: bold;
     text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
-.publication-list li a:hover {
-    color: #f8f9fa;
-    text-decoration: none;
+.publication-list a:hover {
+    color: #007bff; /* Blue hover effect for links */
 }
 
 
