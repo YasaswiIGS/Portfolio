@@ -1,113 +1,134 @@
-/* styles.css */
-
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background: #f8f9fa;
+    color: #333;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Header styles */
-header {
-    background: #333;
+.header {
+    background: #4a90e2;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #ff6f61 3px solid;
+    text-align: center;
+    padding: 2rem 0;
 }
 
-header a {
+.header-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+}
+
+.nav-list a {
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
-header ul {
-    padding: 0;
-    list-style: none;
+.nav-list a:hover {
+    color: #ffd700;
 }
 
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header #branding {
-    float: left;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-/* Hero section styles */
-#hero {
-    background: #333 url('assets/hero-bg.jpg') no-repeat center center/cover;
+/* Hero section */
+.hero {
+    text-align: center;
+    background: linear-gradient(135deg, #6c63ff, #4a90e2);
     color: #fff;
-    height: 500px;
-    position: relative;
-    text-align: center;
+    padding: 4rem 0;
 }
 
-#hero .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+.hero-title {
+    font-size: 3rem;
+    margin: 0;
 }
 
-#hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
 }
 
-#hero p {
-    font-size: 1.2em;
-}
-
-/* Section styles */
-.section {
-    padding: 20px 0;
-}
-
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Skills section styles */
-#skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-}
-
-#skills li {
-    background: #fff;
-    border: 1px solid #ddd;
+.btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #333;
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-#skills li:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s;
+.btn:hover {
+    background: #ffc107;
+}
+
+/* About section */
+.about {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Projects section */
+.projects .project {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.projects img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background: #4a90e2;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
