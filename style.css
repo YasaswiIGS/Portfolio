@@ -1,4 +1,4 @@
-=/* General styles */
+/* General styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
@@ -250,19 +250,18 @@ body {
     text-align: justify;
 }
 
+/* Project Image */
 .project-image {
     flex: 1; /* Take equal space */
     text-align: right; /* Align image to the right */
 }
 
 .project-image img {
-    width: 500px; /* Set a consistent width */
-    height: 200px; /* Set a consistent height */
-    object-fit: cover; /* Ensure the image fits the container without distortion */
+    max-width: 100%; /* Scale image to fit container */
+    height: auto;
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-
 
 /* Responsive Design for Academic Projects */
 @media (max-width: 768px) {
@@ -281,46 +280,44 @@ body {
     }
 }
 
+/* Publications Section */
 #publications {
-    position: relative;
-    background: #20c997; /* Teal background */
-    color: white;
     padding: 60px 0;
-    text-align: center;
+    background: #20c997; /* Teal background matching Certifications */
+    color: #ffffff;
 }
 
-#publications::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Adjust the height of the diagonal */
-    background: #ffffff; /* Background color for the section below */
-    clip-path: polygon(0 100%, 100% 0, 100% 100%); /* Diagonal shape */
-    z-index: 1;
+#publications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #ffffff;
 }
 
 .publication-list {
-    margin: 0;
+    list-style-type: none;
     padding: 0;
-    list-style: none;
+    margin: 0;
+    text-align: left;
 }
 
 .publication-list li {
-    margin: 20px 0;
     font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.publication-list a {
+.publication-list li a {
     color: #ffffff;
     font-weight: bold;
     text-decoration: underline;
-    transition: color 0.3s ease;
 }
 
-.publication-list a:hover {
-    color: #007bff; /* Blue hover effect for links */
+.publication-list li a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
 }
 
 
