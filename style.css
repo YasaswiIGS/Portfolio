@@ -250,18 +250,19 @@ body {
     text-align: justify;
 }
 
-/* Project Image */
 .project-image {
     flex: 1; /* Take equal space */
     text-align: right; /* Align image to the right */
 }
 
 .project-image img {
-    max-width: 100%; /* Scale image to fit container */
-    height: auto;
+    width: 400px; /* Set a consistent width */
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensure the image fits the container without distortion */
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
 
 /* Responsive Design for Academic Projects */
 @media (max-width: 768px) {
