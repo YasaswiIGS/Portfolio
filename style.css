@@ -212,8 +212,74 @@ body {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2.5rem;
-    color: #20c997;
+    color: #20c997; /* Teal green for the section header */
 }
+
+/* Project Card */
+.project-card {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff; /* White background for the card */
+    border: 1px solid #ddd; /* Light border for card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space between cards */
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Project Content */
+.project-content {
+    flex: 1; /* Take equal space */
+    margin-right: 20px; /* Space between content and image */
+}
+
+.project-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40; /* Dark gray */
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #212529;
+    text-align: justify;
+}
+
+/* Project Image */
+.project-image {
+    flex: 1; /* Take equal space */
+    text-align: right; /* Align image to the right */
+}
+
+.project-image img {
+    max-width: 100%; /* Scale image to fit container */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Responsive Design for Academic Projects */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column; /* Stack content and image vertically */
+        text-align: center;
+    }
+
+    .project-content {
+        margin-right: 0; /* Remove margin for stacked layout */
+        margin-bottom: 20px; /* Space between content and image */
+    }
+
+    .project-image {
+        text-align: center; /* Center image in stacked layout */
+    }
+}
+
 
 /* Publications, Education, and Skills Section */
 .section h2 {
