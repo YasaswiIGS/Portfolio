@@ -14,18 +14,20 @@ body {
     overflow: hidden;
 }
 
-/* Hero section styles */
+/* Hero Section */
 #hero {
     background: #ffffff;
     color: #212529;
     height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 10%;
+    text-align: left;
 }
 
 .hero-content {
     max-width: 50%;
-    text-align: left; /* Align text to the left */
 }
 
 #hero h1 {
@@ -61,9 +63,101 @@ body {
     color: #ffffff;
 }
 
+/* About Me Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background: #20c997; /* Teal background */
+    padding: 60px;
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensure shapes don’t overflow */
+}
+
+/* Background Shape */
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white circular shape */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-container::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Another subtle circular shape */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Profile Image */
+.about-image {
+    flex: 1;
+    z-index: 1; /* Ensure the image appears above background shapes */
+}
+
+.profile-img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* About Text */
+.about-text {
+    flex: 2;
+    color: #ffffff;
+    text-align: left; /* Left-aligned text */
+    z-index: 1; /* Ensure text appears above background shapes */
+    margin-left: 30px; /* Space between image and text */
+}
+
+.about-text h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Bright white for the header */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #f8f9fa; /* Slightly off-white for better readability */
+}
+
+.cta-btn--resume {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #20c997; /* Teal text */
+    border: 2px solid #ffffff; /* White border */
+    background-color: #ffffff; /* White button */
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta-btn--resume:hover {
+    background-color: #17a2b8; /* Slightly darker teal on hover */
+    color: #ffffff; /* White text on hover */
+}
+
 /* Section styles */
 .section {
     padding: 60px 0;
+    text-align: left; /* Left-align all sections */
 }
 
 .section h2 {
@@ -73,150 +167,12 @@ body {
     color: #007bff;
 }
 
-.section p {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #6c757d;
-}
-
-/* About Me Section */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #20c997; /* Teal background */
-    padding: 60px 20px;
-    border-radius: 12px;
-}
-
-.about-image {
-    flex: 1;
-    text-align: center;
-    margin: 20px;
-}
-
-.profile-img {
-    border-radius: 12px;
-    width: 250px;
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about-text {
-    flex: 2;
-    color: #ffffff;
-    text-align: left;
-    margin: 20px;
-    max-width: 600px;
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.cta-btn--resume {
-    display: inline-block;
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #20c997;
-    border: 2px solid #ffffff;
-    background-color: #ffffff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s;
-}
-
-.cta-btn--resume:hover {
-    background-color: #17a2b8;
-    color: #ffffff;
-    border-color: #17a2b8;
-}
-
-/* Experience section styles */
-.experience {
-    margin-bottom: 30px;
-}
-
-.experience h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.experience p {
-    color: #6c757d;
-}
-
-/* Project section styles */
-.project {
-    margin-bottom: 30px;
-}
-
-.project h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.project p {
-    color: #6c757d;
-}
-
-.project-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-/* Skills section styles */
-#skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    list-style: none;
-}
-
-#skills li {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-#skills li:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s;
-}
-
-/* Education section styles */
-.education h3 {
-    color: #007bff;
-    margin-bottom: 10px;
-}
-
-.education p {
-    color: #6c757d;
-}
-
-/* Footer styles */
+/* Footer */
 footer {
     background: #343a40;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10%;
 }
 
 footer .social-links a {
