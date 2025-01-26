@@ -74,6 +74,11 @@ body {
     overflow: hidden;
 }
 
+.about-container {
+    position: relative;
+    z-index: 1; /* Ensure it stays on top of other layers */
+}
+
 .about-container::before,
 .about-container::after {
     content: '';
@@ -105,13 +110,15 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
-.about-text {
-    flex: 2;
-    color: #ffffff;
-    text-align: left;
-    z-index: 1;
-    margin-left: 30px;
+.about-text h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #ffffff !important; /* Ensure text color is visible */
+    margin-bottom: 20px;
+    z-index: 2; /* Ensure it appears above other elements */
+    position: relative; /* Align relative to its parent */
 }
+
 
 .about-text h2 {
     font-size: 2.8rem;
