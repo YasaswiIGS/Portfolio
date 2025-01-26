@@ -125,7 +125,11 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
+    text-align: center; /* Center-align the header */
+    position: relative; /* Ensure it stays visible */
+    z-index: 1; /* Bring it above any overlapping shapes */
 }
+
 
 .about-text p {
     font-size: 1.1rem;
