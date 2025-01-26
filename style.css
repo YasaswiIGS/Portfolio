@@ -254,7 +254,6 @@ body {
     overflow: hidden;
 }
 
-/* Project Content */
 .project-content {
     flex: 1; /* Take equal space */
     margin-right: 20px; /* Space between content and image */
