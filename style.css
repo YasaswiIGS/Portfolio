@@ -1,13 +1,11 @@
-/* styles.css */
-
 /* General styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #ffffff;
+    color: #212529;
 }
 
 .container {
@@ -22,7 +20,7 @@ header {
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-bottom: #ff6f61 3px solid;
+    border-bottom: #20c997 3px solid;
     text-align: center;
 }
 
@@ -50,31 +48,47 @@ header nav {
 
 /* Hero section styles */
 #hero {
-    background: #6c757d;
-    color: #ffffff;
-    height: 500px;
-    position: relative;
-    text-align: center;
+    background: #ffffff;
+    color: #212529;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#hero .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    text-align: center;
 }
 
 #hero h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+#hero h1 .text-color-main {
+    color: #20c997;
 }
 
 #hero p {
-    font-size: 1.2em;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.cta-btn--hero {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #20c997;
+    border: 2px solid #20c997;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.cta-btn--hero:hover {
+    background-color: #20c997;
+    color: #ffffff;
 }
 
 /* Section styles */
@@ -85,12 +99,12 @@ header nav {
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     color: #007bff;
 }
 
 .section p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: center;
     color: #6c757d;
 }
@@ -120,16 +134,17 @@ header nav {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #007bff;
+    background: #20c997;
     color: #ffffff;
     border: none;
     cursor: pointer;
     text-decoration: none;
+    border-radius: 8px;
     transition: background 0.3s;
 }
 
 .cta-btn--resume:hover {
-    background: #0056b3;
+    background: #17a2b8;
 }
 
 /* Experience section styles */
@@ -203,7 +218,7 @@ footer {
 footer .social-links a {
     color: #ffffff;
     margin: 0 10px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 footer hr {
