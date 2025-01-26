@@ -73,6 +73,7 @@ body {
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+    z-index: 1; /* Ensure content stays above decorative elements */
 }
 
 .about-container::before,
@@ -80,7 +81,7 @@ body {
     content: '';
     position: absolute;
     border-radius: 50%;
-    z-index: 0;
+    z-index: 0; /* Keep shapes in the background */
 }
 
 .about-container::before {
@@ -116,7 +117,7 @@ body {
     flex: 2;
     color: #ffffff;
     text-align: center; /* Center-align text */
-    z-index: 1;
+    z-index: 2; /* Ensure text stays above background shapes */
     padding: 0 20px;
 }
 
@@ -125,11 +126,13 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
-    text-align: center; /* Center-align the header */
-    position: relative; /* Ensure it stays visible */
-    z-index: 1; /* Bring it above any overlapping shapes */
+    background-color: rgba(32, 201, 151, 0.9); /* Teal background for better contrast */
+    padding: 10px 20px;
+    border-radius: 10px; /* Rounded background for the header */
+    z-index: 3; /* Ensure it's above everything else */
+    display: inline-block; /* Prevent stretching across the section */
+    text-align: center;
 }
-
 
 .about-text p {
     font-size: 1.1rem;
@@ -158,7 +161,7 @@ body {
     color: #ffffff;
 }
 
-/* Responsive Design */
+/* Responsive Design for About Section */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column; /* Stack image and text */
@@ -168,8 +171,11 @@ body {
     .about-text {
         padding: 0 10px;
     }
-}
 
+    .about-text h2 {
+        font-size: 2rem; /* Adjust size for smaller screens */
+    }
+}
 
 /* Experience Section Styling */
 #experience {
@@ -256,7 +262,6 @@ body {
     overflow: hidden;
 }
 
-/* Project Content */
 .project-content {
     flex: 1; /* Take equal space */
     margin-right: 20px; /* Space between content and image */
@@ -288,7 +293,6 @@ body {
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-
 
 /* Responsive Design for Academic Projects */
 @media (max-width: 768px) {
@@ -346,7 +350,6 @@ body {
     color: #f8f9fa;
     text-decoration: none;
 }
-
 
 /* Publications, Education, and Skills Section */
 .section h2 {
