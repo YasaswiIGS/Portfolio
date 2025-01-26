@@ -23,19 +23,20 @@ body {
     display: flex;
     align-items: center; /* Vertically center content */
     justify-content: flex-start; /* Align content to the left */
-    padding-left: 10%; /* Add spacing from the left edge */
+    padding-left: 5%; /* Reduce left padding for alignment */
     text-align: left;
 }
 
 .hero-content {
-    max-width: 50%; /* Limit content width for better readability */
+    max-width: 60%; /* Limit content width for better alignment */
 }
 
 #hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Reduced font size */
     font-weight: bold;
     color: #212529;
-    line-height: 1.2; /* Adjust line height for better spacing */
+    line-height: 1.3; /* Adjust line height for spacing */
+    margin-bottom: 20px; /* Add spacing below heading */
 }
 
 #hero h1 .text-color-main {
@@ -43,15 +44,15 @@ body {
 }
 
 #hero p {
+    font-size: 1rem; /* Reduced font size for description */
     margin-top: 20px;
-    font-size: 1.2rem;
 }
 
 .cta-btn--hero {
     display: inline-block;
     margin-top: 30px;
-    padding: 12px 30px;
-    font-size: 1.1rem;
+    padding: 10px 25px; /* Adjust button size */
+    font-size: 1rem; /* Reduced button text size */
     font-weight: bold;
     color: #20c997;
     border: 2px solid #20c997;
@@ -67,6 +68,7 @@ body {
 }
 
 
+
 /* About Me Section */
 .about-container {
     display: flex;
@@ -78,6 +80,8 @@ body {
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Ensure shapes don’t overflow */
 }
+
+
 
 /* Background Shape */
 .about-container::before {
@@ -129,9 +133,10 @@ body {
 .about-text h2 {
     font-size: 2.8rem;
     font-weight: bold;
-    color: #ffffff; /* Bright white for the header */
+    color: #ffffff !important; /* Bright white for the header */
     margin-bottom: 20px;
 }
+
 
 .about-text p {
     font-size: 1.2rem;
