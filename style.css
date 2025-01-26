@@ -387,3 +387,16 @@ footer .back-to-top:hover {
     color: #20c997; /* Teal color on hover */
     text-decoration: none; /* Remove underline */
 }
+
+/* Initial State: Hidden (Slide In from Left) */
+.hidden {
+    opacity: 0;
+    transform: translateX(-50px); /* Hidden state: Positioned to the left */
+    transition: all 0.6s ease-in-out;
+}
+
+/* Visible State: Fully Shown */
+.visible {
+    opacity: 1;
+    transform: translateX(0); /* Reset to its normal position */
+}
