@@ -169,6 +169,50 @@ body {
     text-align: left; /* Left-align all sections */
 }
 
+/* Professional Experience Section */
+#experience {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Light gray background for contrast */
+}
+
+#experience h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #20c997; /* Teal green for section header */
+}
+
+/* Work Title Styling */
+.work-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40; /* Dark gray for job titles */
+    margin-bottom: 5px;
+}
+
+/* Company Details Styling */
+.company-details {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6c757d; /* Muted gray for company, location, and years */
+    margin-bottom: 15px;
+}
+
+/* Work Summary Styling */
+.work-summary {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #212529; /* Standard body text color */
+    margin-bottom: 30px;
+    text-align: justify; /* Justify text for a clean appearance */
+}
+
+/* Container Spacing */
+.experience {
+    margin-bottom: 30px;
+}
+
+
 .section h2 {
     text-align: center;
     margin-bottom: 20px;
