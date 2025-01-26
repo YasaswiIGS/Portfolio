@@ -400,3 +400,70 @@ footer .back-to-top:hover {
     opacity: 1;
     transform: translateX(0); /* Reset to its normal position */
 }
+
+
+.publications-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #20c997; /* Teal background */
+    padding: 60px;
+    border-radius: 15px; /* Rounded corners */
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto; /* Center with some spacing */
+    max-width: 80%; /* Limit the width */
+}
+
+.publications-container::before,
+.publications-container::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.publications-container::before {
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2); /* Light decorative shape */
+}
+
+.publications-container::after {
+    bottom: -60px;
+    left: -60px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1); /* Another light decorative shape */
+}
+
+.publications-content {
+    z-index: 1; /* Bring text above background shapes */
+    color: #ffffff; /* White text for readability */
+    text-align: center;
+}
+
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.publication-list li {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #ffffff;
+}
+
+.publication-list li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.publication-list li a:hover {
+    color: #f8f9fa; /* Slightly lighter color on hover */
+}
