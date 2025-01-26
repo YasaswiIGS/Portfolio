@@ -55,3 +55,24 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Scroll Animation Logic
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible"); // Add 'visible' when in view
+                    observer.unobserve(entry.target); // Stop observing once visible
+                }
+            });
+        },
+        {
+            threshold: 0.1, // Trigger when 10% of the element is visible
+        }
+    );
+
+    // Select all elements with the 'hidden' class
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach(el => observer.observe(el));
+});
