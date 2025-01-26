@@ -14,38 +14,6 @@ body {
     overflow: hidden;
 }
 
-/* Header styles */
-header {
-    background: #343a40;
-    color: #ffffff;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: #20c997 3px solid;
-    text-align: center;
-}
-
-header a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px;
-}
-
-header nav {
-    margin-top: 10px;
-}
-
 /* Hero section styles */
 #hero {
     background: #ffffff;
@@ -53,8 +21,11 @@ header nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left; /* Align text to the left */
 }
 
 #hero h1 {
@@ -82,7 +53,6 @@ header nav {
     border: 2px solid #20c997;
     border-radius: 8px;
     text-decoration: none;
-    background-color: transparent;
     transition: all 0.3s;
 }
 
@@ -104,47 +74,71 @@ header nav {
 }
 
 .section p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #6c757d;
 }
 
-/* About section styles */
-#about .about-content {
+/* About Me Section */
+.about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    background: #20c997; /* Teal background */
+    padding: 60px 20px;
+    border-radius: 12px;
 }
 
-#about .profile-img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-}
-
-#about p {
+.about-image {
     flex: 1;
-    margin-left: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-img {
+    border-radius: 12px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 2;
+    color: #ffffff;
+    text-align: left;
+    margin: 20px;
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .cta-btn--resume {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #20c997;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #20c997;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
     text-decoration: none;
     border-radius: 8px;
-    transition: background 0.3s;
+    transition: all 0.3s;
 }
 
 .cta-btn--resume:hover {
-    background: #17a2b8;
+    background-color: #17a2b8;
+    color: #ffffff;
+    border-color: #17a2b8;
 }
 
 /* Experience section styles */
@@ -205,6 +199,16 @@ header nav {
 #skills li:hover {
     transform: scale(1.05);
     transition: transform 0.2s;
+}
+
+/* Education section styles */
+.education h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.education p {
+    color: #6c757d;
 }
 
 /* Footer styles */
