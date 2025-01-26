@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,152 +7,138 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
+
     <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hi, my name is <span class="text-color-main">Yasaswi IGS</span><br>Exploring roles in Data Engineering & Software Development.</h1>
-            <p>I'm passionate about transforming complex datasets into meaningful insights and building scalable solutions for impactful decision-making.</p>
-            <a href="#about" class="cta-btn--hero">Know More</a>
+    <section id="hero" class="jumbotron">
+        <div class="container hero-content">
+            <h1 class="hero-title">
+                Hi, my name is <span class="text-color-main">IGS Yasaswi</span><br>
+                Exploring roles in Data Engineering.
+            </h1>
+            <p class="hero-cta">
+                <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+            </p>
         </div>
     </section>
+    
+    
 
     <!-- About Me Section -->
     <section id="about" class="section">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>Hi, I’m Yasaswi IGS — a Data Engineer with expertise in GCP, Python, and ETL pipeline development. With a proven track record of optimizing data processes at Tenet Health and Lam Research, I bring strong skills in Big Query, Dataflow, and cloud-based solutions.</p>
-            <p>Skilled in Python, Java, .NET, and cloud platforms like AWS, I’m passionate about transforming complex data into actionable insights. Let’s connect and shape the future of data together!</p>
-            <a href="resume.pdf" class="cta-btn cta-btn--resume" target="_blank">View Resume</a>
-        </div>
-        <div class="section-image">
-            <img src="profile.jpg" alt="Profile Image" class="profile-img">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="Profile.jpg" alt="Yasaswi IGS Profile" class="profile-img">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi, I’m Yasaswi IGS — a Data Engineer with expertise in GCP, Python, and ETL pipeline development. With a proven track record of optimizing data processes at Tenet Health and Lam Research, I bring strong skills in Big Query, Dataflow, and cloud-based solutions.</p>
+                <p>Skilled in Python, Java, .NET, and cloud platforms like AWS, I’m passionate about transforming complex data into actionable insights. Let’s connect and shape the future of data together!</p>
+                <a href="resume.pdf" target="_blank" class="cta-btn--resume">View Resume</a>
+            </div>
         </div>
     </section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="section">
-        <div class="section-content">
-            <h2>Professional Experience</h2>
-            <p>A skilled Data Engineer with a proven ability to design and implement scalable data solutions. My expertise lies in optimizing ETL pipelines, data migration, and analytics using tools such as GCP, Python, Big Query, Dataflow, Apache Spark, and Hadoop.</p>
-        </div>
+<!-- Experience Section -->
+<section id="experience" class="section">
+    <div class="container">
+        <h2>Professional Experience</h2>
+        <p>
+            A skilled Data Engineer with a proven ability to design and implement scalable data solutions. My expertise lies in optimizing ETL pipelines, data migration, and analytics using tools such as GCP, Python, Big Query, Dataflow, Apache Spark, and Hadoop. Adept at transforming complex datasets into actionable insights, I focus on enhancing operational efficiency and driving impactful outcomes.
+        </p>
         <div class="card-container">
             <div class="card">
-                <div class="work-title">Data Engineer Intern</div>
-                <div class="company-details">Tenet Health Corporation • Dallas, United States • June 2024 – Present</div>
-                <div class="work-summary">
-                    Leveraging Google Cloud Platform (GCP) tools, I successfully developed and optimized ETL pipelines that integrated data seamlessly into Big Query. I introduced a Python-based ingestion framework, ensuring efficient data integration across multiple sources and leading migration from T-SQL to Big Query.
-                </div>
+                <h3 class="work-title">Data Engineer Intern</h3>
+                <p class="company-details">Tenet Health Corporation • Dallas, United States • June 2024 – Present</p>
+                <p class="work-summary">
+                    Leveraging Google Cloud Platform (GCP) tools, I successfully developed and optimized ETL pipelines that integrated data seamlessly into Big Query. I introduced a Python-based ingestion framework, ensuring efficient data integration across multiple sources. Leading a critical migration process from T-SQL to Big Query, I enabled faster and more effective Power BI reporting. Additionally, I collaborated with data science teams to build Python tools, enabling smooth integration with GCP analytics solutions and enhancing data usability.
+                </p>
             </div>
             <div class="card">
-                <div class="work-title">Data Engineer</div>
-                <div class="company-details">Lam Research • Bangalore, India • Aug 2021 – Aug 2023</div>
-                <div class="work-summary">
-                    Focused on designing and maintaining scalable pipelines for processing unstructured data, utilizing Python, SQL, and GCP services. Automated data quality monitoring ensured reliability, while collaboration with cross-functional teams improved report generation efficiency by 40%.
-                </div>
+                <h3 class="work-title">Data Engineer</h3>
+                <p class="company-details">Lam Research • Bangalore, India • Aug 2021 – Aug 2023</p>
+                <p class="work-summary">
+                    Focused on designing and maintaining scalable pipelines for processing unstructured data, I utilized Python, SQL, and Google Cloud services such as Big Query and Dataflow to enhance efficiency by 30%. I implemented distributed data processing systems with Apache Hadoop and Spark, improving overall processing speed by 25%. Automated data quality monitoring processes ensured pipeline reliability and consistency, while collaboration with cross-functional teams resulted in optimized solutions that significantly reduced report generation times.
+                </p>
             </div>
             <div class="card">
-                <div class="work-title">Software Engineer Intern</div>
-                <div class="company-details">Lam Research • Bangalore, India • Jan 2021 – Jul 2021</div>
-                <div class="work-summary">
-                    Contributed to the development of real-time data visualization platforms using Python and Flask. Developed RESTful APIs, reducing backend latency by 20%, and created scalable ETL workflows to streamline data ingestion and transformation.
-                </div>
+                <h3 class="work-title">Software Engineer Intern</h3>
+                <p class="company-details">Lam Research • Bangalore, India • Jan 2021 – Jul 2021</p>
+                <p class="work-summary">
+                    Contributed to the development of a real-time data visualization platform to monitor system performance metrics using Python and Flask. I optimized RESTful APIs, reducing backend latency by 20%, and designed scalable ETL workflows to streamline data ingestion and transformation. Furthermore, I built dynamic dashboards using Angular and JavaScript, enabling actionable insights through intuitive data visualization.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
+
+
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Academic Projects</h2>
-            <div class="card-container">
-                <!-- NIKE Stock Price Prediction -->
-                <div class="card">
-                    <h3 class="work-title">NIKE Stock Price Prediction using LSTM</h3>
-                    <div class="company-details">UT Dallas, Richardson, TX • Mar - May 2024</div>
-                    <div class="work-summary">
-                        By implementing an LSTM model with PySpark and MapReduce, this project achieved a remarkable 96% accuracy in predicting stock prices. A comparative analysis with a GBT regressor highlighted the strengths and weaknesses of both models, demonstrating the superior efficacy of LSTM for time-series forecasting.
-                    </div>
-                    <img src="Nike.jpg" alt="NIKE Stock Price Prediction Project" class="project-img">
-                </div>
-    
-                <!-- Argon DB Engine -->
-                <div class="card">
-                    <h3 class="work-title">Argon DB Engine</h3>
-                    <div class="company-details">UT Dallas, Richardson, TX • Aug - Dec 2023</div>
-                    <div class="work-summary">
-                        This project involved designing a database engine in Java, leveraging a file-per-table storage approach to optimize the management of table and index files at the OS level. The system effectively handled DDL, DML, DQL, and SDL commands while achieving 99% accuracy in query execution, showcasing its robustness and efficiency.
-                    </div>
-                    <img src="DbEngine.jpg" alt="Argon DB Engine Project" class="project-img">
-                </div>
-    
-                <!-- Emotion Detection Project -->
-                <div class="card">
-                    <h3 class="work-title">Emotion Detection Using Multilabel Classification with PEFT and Efficient Model Adaptation</h3>
-                    <div class="company-details">UT Dallas, Richardson, TX • Jan - May 2024</div>
-                    <div class="work-summary">
-                        This project tackles the challenges of emotion detection in tweets using advanced transformer-based models. Beginning with feed-forward neural networks and progressing to pre-trained transformers like DistilBERT, DistilRoberta, and Flan T5, the research evaluates cutting-edge models like Google’s Gemma and Alibaba-NLP’s GTE-QWEN1.5. Techniques like LoRA, IA3, and QLoRA are applied to enhance model efficiency and scalability in resource-constrained environments. Performance is evaluated using metrics such as F1-score, accuracy, and confusion matrices, providing a comprehensive framework for scalable emotion detection.
-                    </div>
-                    <img src="EmotionDetection.jpg" alt="Emotion Detection Project" class="project-img">
-                </div>
+            <div class="project">
+                <h3>NIKE Stock Price Prediction using LSTM, UT Dallas, Richardson, TX</h3>
+                <img src="Nike.jpg" alt="NIKE Stock Price Prediction" class="project-img">
+                <p>Implemented LSTM using PySpark to predict stock prices with 96% accuracy.</p>
+            </div>
+            <div class="project">
+                <h3>Argon DB Engine, UT Dallas, Richardson, TX</h3>
+                <img src="DbEngine.jpg" alt="Argon DB Engine" class="project-img">
+                <p>Developed a database engine in Java for efficient table storage, achieving 99% accuracy in query execution.</p>
             </div>
         </div>
     </section>
-    
-
 
     <!-- Publications Section -->
     <section id="publications" class="section">
-        <div class="section-content">
+        <div class="container">
             <h2>Publications</h2>
-            <div class="card-container">
-                <div class="card">
-                    <div class="work-title">Football Player Move Prediction</div>
-                    <div class="company-details">RIT, Bangalore, India • Aug 2020 – Mar 2021</div>
-                    <div class="work-summary">
-                        Integrated computer vision techniques (EDSR) and CNN DenseNet frameworks to predict football players' movements using video data. Various deep learning models were evaluated to identify optimal predictive architectures.
-                        <a href="http://index.php/jmmf/article/view/47995" target="_blank">View Publication</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="work-title">Hybrid Decision Support System</div>
-                    <div class="company-details">Jan 2020 – May 2020</div>
-                    <div class="work-summary">
-                        Developed a hybrid decision support system for forecasting seasonal crop prices and yields using ML algorithms like ARIMA and LSTM. Optimized model accuracy by 20% and built a web app for predictive crop insights.
-                        <a href="https://link.springer.com/chapter/10.1007" target="_blank">View Publication</a>
-                    </div>
-                </div>
+            <div class="publication">
+                <h3>Football Player Move Prediction, RIT, Bangalore, India</h3>
+                <p>Aug - Mar 2021</p>
+                <p>Integrated computer vision techniques (EDSR) and CNN Dense Net frameworks to predict football players' movements using video data. Evaluated deep learning frameworks like ResNet152 and DenseNet161. <a href="http://index.php/jmmf/article/view/47995" target="_blank">Publication Link</a></p>
+            </div>
+            <div class="publication">
+                <h3>Hybrid Decision Support System to Enhance Crop Productivity</h3>
+                <p>Jan - May 2020</p>
+                <p>Designed a system to forecast seasonal crop prices and yields using hybrid ML algorithms (ARIMA, LSTM). Developed a web application for predictive crop forecasts. <a href="https://link.springer.com/chapter/10.1007" target="_blank">Publication Link</a></p>
+            </div>
+            <div class="publication">
+                <h3>Document Retrieval Through Cover Density Ranking</h3>
+                <p>Aug - Dec 2019</p>
+                <p>Enhanced information retrieval using Cover Density Ranking (CDR) to overcome limitations of the Vector Space Model (VSM), implemented in Python. <a href="https://ieeexplore.ieee.org/document/9622541" target="_blank">Publication Link</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Technical Skills Section -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
-        <div class="section-content">
+        <div class="container">
             <h2>Technical Skills</h2>
             <ul>
                 <li>Programming: Python, Java, JavaScript, C, C++, TypeScript</li>
-                <li>Operating Systems: Unix, Linux, Windows</li>
-                <li>Full-Stack Development: Angular, React, Node.js, Spring Boot, Flask</li>
-                <li>Frameworks/Libraries: Hadoop, Apache Spark, Scikit Learn, PyTorch, TensorFlow</li>
-                <li>Database Management: MySQL, MongoDB, PostgreSQL, NoSQL</li>
-                <li>Additional Tools: GCP, AWS, Docker, Kubernetes, Azure, DevOps</li>
+                <li>Cloud Platforms: GCP, AWS, Azure</li>
+                <li>Database Management: MySQL, MongoDB, PostgreSQL</li>
+                <li>Big Data Tools: Hadoop, PySpark</li>
+                <li>DevOps: Docker, Kubernetes</li>
             </ul>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="section">
-        <div class="section-content">
+        <div class="container">
             <h2>Education</h2>
             <div class="education">
-                <h3>The University of Texas at Dallas</h3>
-                <p>Aug 2023 – May 2025</p>
+                <h3>The University of Texas at Dallas, Richardson, TX</h3>
+                <p>Aug 2023 - May 25</p>
                 <p>Master of Science in Computer Science, specialization in Data Science</p>
             </div>
             <div class="education">
-                <h3>Ramaiah Institute of Technology, Bangalore</h3>
-                <p>Aug 2017 – May 2021</p>
+                <h3>Ramaiah Institute of Technology, Bangalore, India</h3>
+                <p>Aug 2017 - May 21</p>
                 <p>Bachelor of Engineering in Computer Science</p>
             </div>
         </div>
@@ -161,35 +146,27 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="section-content">
+        <div class="container">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:yasaswiigsms@gmail.com">yasaswiigsms@gmail.com</a></p>
+            <p>Email: yasaswiigsms@gmail.com</p>
             <p>Phone: +1 (945) 527-4904</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/yasaswi-igs/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/YasaswiIGS" target="_blank"><i class="fa fa-github"></i></a>
-            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <hr>
-        <p>&copy; 2025 Yasaswi IGS. All rights reserved.</p>
+        <div class="container">
+            <a href="#top" class="back-to-top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yasaswi-igs/" target="_blank"><i class="fa fa-linkedin fa-inverse"></i></a>
+                <a href="https://github.com/YasaswiIGS" target="_blank"><i class="fa fa-github fa-inverse"></i></a>
+            </div>
+            <hr>
+            <p>&copy; 2025 - Yasaswi IGS</p>
+        </div>
     </footer>
 
-    <!-- JavaScript for Scrolling Animations -->
-    <script>
-        const sections = document.querySelectorAll('.section');
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        });
-        sections.forEach(section => observer.observe(section));
-    </script>
+    <!-- Include JavaScript -->
+    <script src="index.js"></script>
 </body>
-
 </html>
