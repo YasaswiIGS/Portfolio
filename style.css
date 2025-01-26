@@ -280,6 +280,46 @@ body {
     }
 }
 
+/* Publications Section */
+#publications {
+    padding: 60px 0;
+    background: #20c997; /* Teal background matching Certifications */
+    color: #ffffff;
+}
+
+#publications h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.publication-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.publication-list li {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.publication-list li a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.publication-list li a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+}
+
 
 /* Publications, Education, and Skills Section */
 .section h2 {
