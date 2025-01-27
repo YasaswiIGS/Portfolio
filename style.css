@@ -477,53 +477,56 @@ footer .back-to-top:hover {
 }
 
 .education-container {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px; /* Space between cards */
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .education-card {
-    flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
     background: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    padding: 20px; /* Padding for content */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure the image stays within the card */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-card:hover {
-    transform: translateY(-5px); /* Raise the card slightly on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-.education-card h3 {
-    font-size: 1.5rem; 
-    font-weight: bold; 
-    color: #343a40; /* Darker text */
-    margin-bottom: 10px; 
-}
-
-.education-card .degree-details {
-    font-size: 1rem; 
-    font-weight: 600; 
-    color: #6c757d; /* Muted text for details */
-    margin-bottom: 15px;
-}
-
-.education-card .grade {
-    font-size: 1rem;
-    color: #212529; /* Standard text color */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .education-card img.education-image {
-    width: 300px;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Image spans the full width of the card */
+    height: 200px; /* Adjust height to fit nicely */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+    border-bottom: 1px solid #ddd; /* Separate image from content */
+}
+
+.education-details {
+    padding: 20px;
+}
+
+.education-details h3 {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.education-card .degree-details {
+    font-size: 1.2rem; /* Increase font size */
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.education-card .grade {
+    font-size: 1.3rem; /* Increase font size */
+    font-weight: bold;
+    color: #20c997;
 }
 
 #education {
