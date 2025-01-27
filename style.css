@@ -542,3 +542,43 @@ footer .back-to-top:hover {
 }
 
 
+/* Contact Section */
+#contact {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem; /* Larger and visually distinct */
+    font-weight: bold;
+    color: #20c997; /* Teal for consistency */
+    margin-bottom: 30px; /* Add space below title */
+}
+
+.contact-details {
+    font-size: 1.5rem; /* Bigger text for readability */
+    color: #212529; /* Dark text for contrast */
+    line-height: 2; /* Add spacing between lines */
+}
+
+.contact-details p {
+    margin: 15px 0; /* Space between email and phone */
+}
+
+.contact-icon {
+    font-size: 1.8rem; /* Icon size larger for visibility */
+    color: #20c997; /* Match teal styling */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-link {
+    font-weight: bold;
+    color: #212529; /* Dark text for contrast */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #17a2b8; /* Subtle hover effect */
+}
