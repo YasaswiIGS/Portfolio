@@ -406,64 +406,72 @@ footer .back-to-top:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* Center-align content */
     background: #20c997; /* Teal background */
-    padding: 60px;
-    border-radius: 15px; /* Rounded corners */
+    padding: 40px; /* Adjust padding for a tighter look */
+    border-radius: 15px; /* Rounded corners for card-like appearance */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow for depth */
     position: relative;
     overflow: hidden;
-    margin: 20px auto; /* Center with some spacing */
-    max-width: 80%; /* Limit the width */
+    margin: 30px auto; /* Center with proper spacing */
+    max-width: 70%; /* Limit the width */
 }
 
 .publications-container::before,
 .publications-container::after {
-    content: '';
+    content: ''; /* Decorative shapes */
     position: absolute;
     border-radius: 50%;
-    z-index: 0;
+    z-index: 0; /* Keep shapes in the background */
 }
 
 .publications-container::before {
     top: -50px;
-    right: -50px;
-    width: 300px;
-    height: 300px;
-    background: rgba(255, 255, 255, 0.2); /* Light decorative shape */
+    left: -50px; /* Changed position for variety */
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1); /* Light decorative shape */
 }
 
 .publications-container::after {
-    bottom: -60px;
-    left: -60px;
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.1); /* Another light decorative shape */
+    bottom: -70px;
+    right: -70px; /* Changed position for balance */
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.05); /* Another light decorative shape */
 }
 
 .publications-content {
-    z-index: 1; /* Bring text above background shapes */
-    color: #ffffff; /* White text for readability */
+    z-index: 1; /* Ensure text appears above background shapes */
+    color: #ffffff; /* White text for contrast */
     text-align: center;
+}
+
+.publications-content h2 {
+    font-size: 2rem; /* Consistent with other sections */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below heading */
 }
 
 .publication-list {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0 0;
+    margin: 10px 0 0;
 }
 
 .publication-list li {
-    font-size: 1.2rem;
-    line-height: 2;
-    color: #ffffff;
+    font-size: 1.1rem; /* Slightly smaller font for compactness */
+    line-height: 1.8; /* Adjust line height for better spacing */
+    color: #f8f9fa; /* Slightly lighter white for text */
 }
 
 .publication-list li a {
-    color: #ffffff;
+    color: #ffffff; /* Maintain white links */
     font-weight: bold;
     text-decoration: underline;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out; /* Smooth hover transition */
 }
 
 .publication-list li a:hover {
-    color: #f8f9fa; /* Slightly lighter color on hover */
+    color: #dff7f5; /* Subtle color change on hover */
 }
