@@ -502,7 +502,7 @@ footer .back-to-top:hover {
 
 .education-card img.education-image {
     width: 100%; /* Image spans the full width of the card */
-    height: 200px; /* Adjust height to fit nicely */
+    height: 180px; /* Adjust height to fit nicely */
     object-fit: cover; /* Maintain aspect ratio and crop excess */
     border-bottom: 1px solid #ddd; /* Separate image from content */
 }
